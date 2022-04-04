@@ -28,4 +28,4 @@ text.
 
 ## Regex Parts
 
-### Parts
+### Anchors
