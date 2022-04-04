@@ -43,3 +43,32 @@ Examples of Anchors :
 - ^Example$ : Matches only the word Example
 
 ### Quantifiers
+Qunatifiers are charecters that specify how many instances a group or charecter class must be in the input to match.
+
+- Example
+
+* `*` - matches a group of charecters followed by zero or more of last character
+* `+` - matches a group of charecters followed by one or more of last character
+* `?` - matches a group of charecters followed by zero or one of last character
+* `{}` - matches a group of characters based on the numbers placed inside of the last character
+* `()` - matches a group of characters followed by zero or more copies in the parentheses
+
+* Example
+
+ENA*  matches EN followed by zero or more A
+ENA+  matches EN followed by one or more A
+ENA?  matches EN followed by zero or one A
+ENA{2} matches EN followed by 2 A
+ENA {2,} matches EN followed by 2 or more A
+ENA {2,8} matches EN followed by 2 to 8 A
+E(NA)* matches E followed by zero or more copies of NA
+
+### OR Operator
+OR Operators (Alternation Operation) matches alternation of ethier two charecters listed.
+
+* Example
+
+* `(|)` - matches to eitehr side of vertical bar
+* `[]` - matches to anything without whats in the brackets
+
+- Example
