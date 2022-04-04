@@ -29,3 +29,16 @@ text.
 ## Regex Parts
 
 ### Anchors
+Anchors are characters in regular expression that match strings that start, end, or both cerrtain chrecters.
+
+Examples of Anchors :
+
+* `^` - matches any string with start
+* `$` - matches any string with end
+* Examples:
+
+^Example  Matches any string starting with Example
+Example$  Matches any string ending with Example
+^Example$ Matches only the word Example
+
+### Quantifiers
