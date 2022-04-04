@@ -24,7 +24,7 @@ text.
 - Greedy and Lazy Match
 - Boundries
 - Back-References
-- Look-ahead snf look behind
+
 
 ## Regex Parts
 
@@ -159,41 +159,31 @@ Examples of Greedy and/or Lazy Matching :
 
 
 ### Boundaries
-
+Thier are two types word and non-word and are denoted by specific charecter
+ 
 Examples of Boundaries :
-* `\b` - 
-* `\B` - 
-* `*`
+* `\b` - positions that bounds a word, or where a word starts or ends, anmd place between word and non-word
+* `\B` - does the exact oppisite of the last
+* `*` - will match a word to word or non-word to non-word
 * Examples :
 ```
-`Hello World` has 12 total Boundaries with 8 Word Boundaries as seen below:
-|H|e|l|l|o| |W|o|r|l|d|
-^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
-N W W W W N N W W W W N  -  N = Nonword Boundary \ W = Word Boundary
+`ENA` has 4 total Boundaries with 3 Word Boundaries as seen below:
+|E|N|A|
+^ ^ ^ ^ 
+N W W N  -  N = Nonword Boundary \ W = Word Boundary
 \bxyz\b     matches a "whole words only search" for the string `xyz`
 \Bxyz\B     matches only if the pattern is fully surrounded by word characters `txyzt` would match the string `xyz` because it only has word boundaries
 ```
 
 ### Back-references
-
+When grouping it may capture and be saved for later use, Backrefrencing is the action of using these matches
+ 
 Examples are a follows:
+
+- ([ENA])\1              using \1 it matches the same text that was matched by the first capturing group
+- ([uwx])([yz])\2\1      we can use \2 (\3, \4, etc.) to identify the same text that was matched by the second (third, fourth, etc.) capturing group
+- (?<bar>[ENA])\k<bar>   we put the name bar to the group and we reference it later (\k<foo>). The result is the same of the first regex
 ```
-([xyz])\1              using \1 it matches the same text that was matched by the first capturing group
-([uwx])([yz])\2\1      we can use \2 (\3, \4, etc.) to identify the same text that was matched by the second (third, fourth, etc.) capturing group
-(?<bar>[xzy])\k<bar>   we put the name bar to the group and we reference it later (\k<foo>). The result is the same of the first regex
-```
-### Look-ahead and Look-behind
-
-
-Examples of Look-ahead and Look-behind :
-
-h(?=t)       
-(?<=t)h      
-
-NEGATION OPERATOR
-
-h(?!t)       
-(?<!t)h      
 
 ## Writer
   
