@@ -55,13 +55,13 @@ Qunatifiers are charecters that specify how many instances a group or charecter 
 
 * Example
 
-ENA*  matches EN followed by zero or more A
-ENA+  matches EN followed by one or more A
-ENA?  matches EN followed by zero or one A
-ENA{2} matches EN followed by 2 A
-ENA {2,} matches EN followed by 2 or more A
-ENA {2,8} matches EN followed by 2 to 8 A
-E(NA)* matches E followed by zero or more copies of NA
+- ENA*  matches EN followed by zero or more A
+- ENA+  matches EN followed by one or more A
+- ENA?  matches EN followed by zero or one A
+- ENA{2} matches EN followed by 2 A
+- ENA {2,} matches EN followed by 2 or more A
+- ENA {2,8} matches EN followed by 2 to 8 A
+- E(NA)* matches E followed by zero or more copies of NA
 
 ### OR Operator
 OR Operators (Alternation Operation) matches alternation of ethier two charecters listed.
@@ -72,3 +72,29 @@ OR Operators (Alternation Operation) matches alternation of ethier two charecter
 * `[]` - matches to anything without whats in the brackets
 
 - Example
+
+- E(N|A) matches E with N or A
+- E[NA] matches E without NA
+
+### Character Classes
+Tess regex to match only one serveral Characters such as digits,words, or whitespace
+
+-Example 
+
+* `\d` - matches a single digit
+* `\w`- matches a word with or without underscore
+* `\s` - matches any whitespace including tabs and line breaks
+* `.` - matches any
+* Capital versions do the oppisite
+
+- Example
+
+- \d matches single digit 0-9
+- \w matches a single charecter that is a-z
+- \s matches ` `
+- . matches any charecter
+- \D matchess a single non-digit
+- \W matches a single non a-z charecter
+- \S matches any non ` ` 
+
+### Flags
