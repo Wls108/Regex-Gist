@@ -3,7 +3,7 @@
 This Tutorial will break down Regex (Regular Expression) down into more basic and easier 
 to understand parts for specificly email Regex.
 
-#Summary
+## Summary
 
 Regex (short of Regular Expression) is a string that allows you to create a search pattern that finds and manages
 text.
@@ -12,7 +12,7 @@ text.
 
 ^ A Regular expression used for Email address.
 
-#Table of Contents
+## Table of Contents
 
 - Anchors
 - Quantifiers
@@ -26,6 +26,6 @@ text.
 - Back-References
 - Look-ahead snf look behind
 
-# Regex Parts
+## Regex Parts
 
-# Parts
+### Parts
