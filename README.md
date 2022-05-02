@@ -14,7 +14,7 @@ text.
 
 ## Table of Contents
 
-[- Anchors](## Anchors] 
+- [Anchors](#Anchors)
 - Quantifiers
 - OR Operator
 - Charecter Classes
