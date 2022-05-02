@@ -16,12 +16,12 @@ text.
 
 - [Anchors](#Anchors)
 - [Quantifiers](#Quantifiers)
-- [OR Operator](#OR Operator)
-- [Charecter Classes](#Charecter Classes)
+- [OR Operator](#OR-Operator)
+- [Charecter Classes](#Charecter-Classes)
 - [Flags](#Flags)
-- [Grouping and Capturing](#Grouping and Capturing)
-- [Bracket Expressions](#Bracket Expressions)
-- [Greedy and Lazy Match](#Greedy and Lazy Match)
+- [Grouping and Capturing](#Grouping-and-Capturing)
+- [Bracket Expressions](#Bracket-Expressions)
+- [Greedy and Lazy Match](#Greedy-and-Lazy-Match)
 - [Boundries](#Boundries)
 - [Back-References](#Back-References)
 
