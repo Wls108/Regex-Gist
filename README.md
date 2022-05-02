@@ -15,15 +15,15 @@ text.
 ## Table of Contents
 
 - [Anchors](#Anchors)
-- Quantifiers
-- OR Operator
-- Charecter Classes
-- Flags
-- Grouping and Capturing
-- Bracket Expressions
-- Greedy and Lazy Match
-- Boundries
-- Back-References
+- [Quantifiers](#Quantifiers)
+- [OR Operator](#OR Operator)
+- [Charecter Classes](#Charecter Classes)
+- [Flags](#Flags)
+- [Grouping and Capturing](#Grouping and Capturing)
+- [Bracket Expressions](#Bracket Expressions)
+- [Greedy and Lazy Match](#Greedy and Lazy Match)
+- [Boundries](#Boundries)
+- [Back-References](#Back-References)
 
 
 ## Regex Parts
